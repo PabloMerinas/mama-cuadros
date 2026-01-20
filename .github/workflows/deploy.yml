@@ -27,24 +27,10 @@ jobs:
       - name: 🏗 Construir el proyecto
         run: npm run build
 
-      - name: 📁 Copiar dist a docs y agregar imágenes
+      - name: 📁 Copiar dist a docs
         run: |
           rm -rf docs
           cp -r dist docs
-          mkdir -p docs/obras
-          node -e "
-            const fs = require('fs');
-            const path = require('path');
-            const src = 'public/obras';
-            const dst = 'docs/obras';
-            if (fs.existsSync(src)) {
-              fs.readdirSync(src).forEach(file => {
-                const srcFile = path.join(src, file);
-                const dstFile = path.join(dst, file);
-                fs.copyFileSync(srcFile, dstFile);
-              });
-            }
-          "
 
       - name: 📤 Commit y push
         run: |
