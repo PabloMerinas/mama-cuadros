@@ -1,8 +1,6 @@
 import { useInView } from '../hooks/useInView';
 
 export default function Hero() {
-  const sobreImg = `${import.meta.env.BASE_URL}obras/sobre.png`;
-  
   return (
     <section className="bg-gradient-to-b from-bg via-bg to-bgLight text-text px-4 sm:px-6 md:px-20 py-12 sm:py-20 md:py-28 relative overflow-hidden">
       {/* Decoración de fondo */}
@@ -10,7 +8,7 @@ export default function Hero() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
         <img
-          src={sobreImg}
+          src="/obras/sobre.png"
           alt="Obra principal"
           className="w-full h-[400px] sm:h-[450px] md:h-[520px] lg:h-[800px] object-contain rounded-2xl order-1 md:order-1"
         />

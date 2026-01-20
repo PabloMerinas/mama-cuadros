@@ -2,7 +2,6 @@ import { useInView } from '../hooks/useInView';
 
 export default function Bio() {
   const [ref, isInView] = useInView();
-  const bioImg = `${import.meta.env.BASE_URL}obras/bio.png`;
 
   return (
     <section ref={ref} className={`bg-gradient-to-b from-bg via-bgLight to-bg text-text px-4 sm:px-6 md:px-20 py-12 sm:py-20 md:py-28 relative animate-in-view ${isInView ? 'in-view' : ''}`}>
@@ -38,7 +37,7 @@ export default function Bio() {
         </div>
 
         <img
-          src={bioImg}
+          src="/obras/bio.png"
           alt="Proceso"
           className="w-full h-[300px] sm:h-[400px] md:h-[420px] lg:h-[520px] object-contain rounded-2xl order-1 md:order-2 card-shadow hover:shadow-2xl transition-shadow duration-500"
         />
