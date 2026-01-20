@@ -1,4 +1,5 @@
 import { useInView } from '../hooks/useInView';
+import sobreImg from '../assets/obras/sobre.png';
 
 export default function Hero() {
   return (
@@ -8,7 +9,7 @@ export default function Hero() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
         <img
-          src="./obras/sobre.png"
+          src={sobreImg}
           alt="Obra principal"
           className="w-full h-[400px] sm:h-[450px] md:h-[520px] lg:h-[800px] object-contain rounded-2xl order-1 md:order-1"
         />

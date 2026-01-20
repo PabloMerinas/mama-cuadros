@@ -1,4 +1,5 @@
 import { useInView } from '../hooks/useInView';
+import bioImg from '../assets/obras/bio.png';
 
 export default function Bio() {
   const [ref, isInView] = useInView();
@@ -37,7 +38,7 @@ export default function Bio() {
         </div>
 
         <img
-          src="./obras/bio.png"
+          src={bioImg}
           alt="Proceso"
           className="w-full h-[300px] sm:h-[400px] md:h-[420px] lg:h-[520px] object-contain rounded-2xl order-1 md:order-2 card-shadow hover:shadow-2xl transition-shadow duration-500"
         />
