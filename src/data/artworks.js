@@ -1,6 +1,6 @@
-import cuadro1 from '../assets/obras/cuadro1.png';
-import cuadro2 from '../assets/obras/cuadro2.png';
-import cuadro3 from '../assets/obras/cuadro3.png';
+const cuadro1 = new URL('../assets/obras/cuadro1.png', import.meta.url).href;
+const cuadro2 = new URL('../assets/obras/cuadro2.png', import.meta.url).href;
+const cuadro3 = new URL('../assets/obras/cuadro3.png', import.meta.url).href;
 
 export const artworks = [
   {
