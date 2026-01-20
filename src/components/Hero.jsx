@@ -1,7 +1,7 @@
 import { useInView } from '../hooks/useInView';
 
 export default function Hero() {
-  const sobreImg = new URL('../assets/obras/sobre.png', import.meta.url).href;
+  const sobreImg = `${import.meta.env.BASE_URL}obras/sobre.png`;
   
   return (
     <section className="bg-gradient-to-b from-bg via-bg to-bgLight text-text px-4 sm:px-6 md:px-20 py-12 sm:py-20 md:py-28 relative overflow-hidden">
